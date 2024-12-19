@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot with Notifications</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Chat Place -->
+    <div class="chat-place" id="chat">
+      <div class="chat-box">
+        <div class="first-text-side">
+            <h1>ChatBot</h1>
+            <i class="ri-close-circle-fill" id="closeChat"></i>
+        </div>
+        <div class="show-chats" id="chatPlace">
+            <div class="robots-side">
+                <i class="ri-robot-2-line"></i>
+            </div>
+        </div>
+        <div class="input-area">
+            <input type="text" placeholder="Type your message..." class="chat-input" id="talkToBot">
+            <button class="send-btn" id="sendMessage"><i class="ri-send-plane-fill"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating Chat Button -->
+    <button id="displayChat" class="bntn">
+        <i class="ri-chat-4-fill"></i>
+    </button>
+
+    <!-- Notification for Bot Reply -->
+    <div class="notification" id="botNotification">
+        <p id="notificationMessage"></p>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
